@@ -1,0 +1,17 @@
+.motivation {
+    text-align: center;
+}
+
+.grid_item{
+    display: inline-block;
+    margin: 15px;
+}
+
+.grid_item.start{
+    margin-right : 45px;
+}
+
+.grid_item.now{
+    margin-left : 45px;
+}
+

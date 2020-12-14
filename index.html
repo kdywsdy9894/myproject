@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="motivation">
+        <h1>Go Hard!</h1>
+        <h3>Just do it.</h3>
+        <div class="GrandOpening">
+            <div class="grid_item start">
+                <h2>START</h2>
+                <div id="Open">2020.11.29 Sun 18:00:00 </div>
+            </div>
+            <div class="grid_item now">
+                <h2>NOW</h2>
+                <div id="Clock" class="clock" onload="showTime()"></div>
+            </div>
+        </div>
+        <div class="MyProjects">
+            <div class="grid_item ColorCharacter">
+                <h2>OPEN</h2>
+                <h4>1. Color Character with AI</h4>
+                <div id="Open">2020.12.11 Fri 18:00:00 </div>
+            </div>
+            <div class="grid_item NewProject">
+                <h2>ing...</h2>
+                <h4>2. ing...</h4>
+                <div id="Open">ing... </div>
+            </div>
+        </div>
+    </div>
+    <!-- clock -->
+    <script>
+        function showTime() {
+            var date = new Date();
+            var y = date.getFullYear();
+            var mon = (date.getMonth() + 1);
+            var d = date.getDate();
+            var day = date.getDay();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+
+            function addzero(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+
+            var weekday = new Array(7)
+            weekday[0] = "Sun";
+            weekday[1] = "Mon";
+            weekday[2] = "Tue";
+            weekday[3] = "Wed";
+            weekday[4] = "Thu";
+            weekday[5] = "Fri";
+            weekday[6] = "Sat";
+
+            h = addzero(h);
+            m = addzero(m);
+            s = addzero(s);
+
+            var time = y + "." + mon + "." + d + " " + weekday[day] + " " + h + ":" + m + ":" + s;
+            document.getElementById("Clock").innerHTML = time;
+
+            setTimeout(showTime, 1000);
+        }
+
+        showTime();
+    </script>
+
+</body>
+
+</html>
