@@ -42,6 +42,7 @@ body {
     position: absolute;
     color: white;
     border: none;
+    background: none;
 }
   
 @media screen and (max-height: 450px) {
@@ -65,7 +66,7 @@ body {
     cursor:pointer;
 }
 
-.MenuIcon :hover {
+.MenuIcon .line:hover {
  color: gray;
 }
 
