@@ -59,6 +59,10 @@ body {
     color: white;
 }
 
+.MenuIcon {
+    background:none;
+}
+
 .line {
     width: 35px;
     height: 5px;
