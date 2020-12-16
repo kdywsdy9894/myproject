@@ -12,6 +12,8 @@ body {
 .nav div {
     height:4px;
     background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
 }
 
 .nav {
