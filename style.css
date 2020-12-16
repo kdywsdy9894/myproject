@@ -63,6 +63,7 @@ body {
     background:none;
     border:none;
     margin-right: 1200px;
+    cursor:pointer;
 }
 
 .line {
@@ -71,7 +72,16 @@ body {
     background-color: white;
     border-radius: 20px;
     margin: 6px 0;
-  }
+}
+
+.closebtn {
+    background: none;
+    border: none;
+}
+
+.section {
+    margin-top: 0;
+}
 
 .grid_item{
     display: inline-block;
