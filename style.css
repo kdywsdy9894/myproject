@@ -43,6 +43,9 @@ body {
     color: white;
     border: none;
     background: none;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
 }
   
 @media screen and (max-height: 450px) {
@@ -66,8 +69,8 @@ body {
     cursor:pointer;
 }
 
-.MenuIcon .line:hover {
- color: gray;
+.MenuIcon div:hover {
+    color: gray;
 }
 
 .line {
