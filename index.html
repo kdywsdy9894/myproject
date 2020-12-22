@@ -9,18 +9,7 @@
 
 <body>
     <div class="motivation">
-        <button class="MenuIcon" onclick="openNav()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </button>
-        <div id="myNav" class="overlay">
-            <button class="closebtn" onclick="closeNav()">&larr;</button>
-            <div class="overlay-content">
-                <a href="#">Coming Soon</a>
-                <a href="https://kdycolorcharacter.netlify.app/">「이 순간, 이 색」</a>
-            </div>
-        </div>
+        <button class="openbtn" onclick="openNav()">menu</button>
         <section>
             <h1>Go Hard!</h1>
             <h3>Whole World at your feet.</h3>
@@ -34,6 +23,13 @@
             <div class="grid_item now">
                 <h2>NOW</h2>
                 <div id="Clock" class="clock" onload="showTime()"></div>
+            </div>
+        </div>
+        <div id="myNav" class="overlay">
+            <button class="closebtn" onclick="closeNav()">&#10006;</button>
+            <div class="overlay-content">
+                <a href="#">Coming Soon</a>
+                <a href="https://kdycolorcharacter.netlify.app/">「이 순간, 이 색」</a>
             </div>
         </div>
         <div class="MyProjects">
@@ -60,8 +56,8 @@
             document.getElementById("myNav").style.width = "0%";
         }
     </script>
-    <!-- clock -->
 
+    <!-- clock -->
     <script>
         function showTime() {
             var date = new Date();
