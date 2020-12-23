@@ -1,7 +1,7 @@
 body {
-    background-image: url("worldatfeet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("worldatfeet.jpg");
 }
 
 .Title, .SubTitle {
@@ -21,3 +21,12 @@ body {
 .SubTitle {
     font-size: 15px;
 }
+
+@media screen and (max-width: 320px) {
+    body {
+      font-size : 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("worldatfeet.jpg");
+    }
+  }
