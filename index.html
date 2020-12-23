@@ -8,54 +8,15 @@
 </head>
 
 <body>
-    <div class="motivation">
-        <button class="openbtn" onclick="openNav()">menu</button>
-        <section>
-            <h1>Go Hard!</h1>
-            <h3>Whole World at your feet.</h3>
-            <h4>No doubt, Just do it.</h4>
-        </section>
-        <div class="GrandOpening">
-            <div class="grid_item start">
-                <h2>START</h2>
-                <div id="Open">2020.11.29 Sun 18:00:00 </div>
-            </div>
-            <div class="grid_item now">
-                <h2>NOW</h2>
-                <div id="Clock" class="clock" onload="showTime()"></div>
-            </div>
-        </div>
-        <div id="myNav" class="overlay">
-            <button class="closebtn" onclick="closeNav()">&#10006;</button>
-            <div class="overlay-content">
-                <a href="#">Coming Soon</a>
-                <a href="https://kdycolorcharacter.netlify.app/">「이 순간, 이 색」</a>
-            </div>
-        </div>
-        <div class="MyProjects">
-            <div class="grid_item ColorCharacter">
-                <h2>OPEN</h2>
-                <h4>1. Color Character with AI</h4>
-                <div id="Open">2020.12.11 Fri 18:00:00 </div>
-            </div>
-            <div class="grid_item NewProject">
-                <h2>ing...</h2>
-                <h4>2. ing...</h4>
-                <div id="Open">ing... </div>
-            </div>
-        </div>
+    <div class="Title">
+        <h1>It's Your Time</h1>
+        <div id="Clock" onload="showTime()"></div>
     </div>
 
-    <!-- Top-bottom slidemenu -->
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
+    <div class="SubTitle">
+        <h2>The world is Yours</h2>
+        <div>Take it over.</div>
+    </div>
 
     <!-- clock -->
     <script>
