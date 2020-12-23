@@ -28,10 +28,17 @@ body {
 
 @media screen and (max-width: 600px) {
     body {
-      font-size : 10px;
       background-size: cover;
       background-repeat: no-repeat;
       background-image: url("worldatfeet.jpg");
       background-position: center;
+    }
+
+    .Title {
+        font-size : 10px;
+    }
+
+    .Subtitle {
+        font-size : 6px;
     }
   }
