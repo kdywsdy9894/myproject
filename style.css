@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/worldatfeet.jpg");
+}
+
+.Title, .SubTitle {
+    text-align :center;
+    color: white;
+    display: inline;
+}
+
+.Title {
+    font-size: 30px;
+}
+
+.Title h1 {
+    margin-bottom : 12px;
+}
+
+
+.Menu {
+    width: 20px;
+    height: 20px;
+    opacity : 0.8;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+    0 0 60px 30px #fff,  
+    0 0 100px 60px #f0f, 
+    0 0 140px 90px #0ff; 
+    margin : 0 auto;
+    left :0;
+    right: 0;
+    bottom: 180px;
+    position:absolute;
+    border : none;
+    outline : none;
+}
+
+.Menu:hover {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+    0 0 80px 40px #fff,  
+    0 0 120px 80px #f0f, 
+    0 0 160px 120px #0ff; 
+}
+  
+
+@media screen and (max-width: 600px) {
+    body {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("img/worldatfeet.jpg");
+      background-position: center;
+    }
+
+    .Title {
+        font-size : 18px;
+    }
+
+    .SubTitle {
+        font-size : 10px;
+    }
+  }

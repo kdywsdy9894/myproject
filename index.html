@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>dyk's page</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="Title">
+        <h1>It's Your Time</h1>
+        <div id="Clock" onload="showTime()"></div>
+    </div>
+
+    <div class="SubTitle">
+        <h2>The world is Yours</h2>
+        <div>Take it over.</div>
+    </div>
+
+    <button id="menu" class="Menu" type="button"></button>
+    
+    <script>
+        function showTime() {
+            var date = new Date();
+            var y = date.getFullYear();
+            var mon = (date.getMonth() + 1);
+            var d = date.getDate();
+            var day = date.getDay();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+
+            function addzero(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+
+            var weekday = new Array(7)
+            weekday[0] = "Sun";
+            weekday[1] = "Mon";
+            weekday[2] = "Tue";
+            weekday[3] = "Wed";
+            weekday[4] = "Thu";
+            weekday[5] = "Fri";
+            weekday[6] = "Sat";
+
+            h = addzero(h);
+            m = addzero(m);
+            s = addzero(s);
+
+            var time = y + "." + mon + "." + d + " " + weekday[day] + " " + h + ":" + m + ":" + s;
+            document.getElementById("Clock").innerHTML = time;
+
+            setTimeout(showTime, 1000);
+        }
+
+        showTime();
+
+    </script>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fd0f2a62cc5175a"></script>
+
+</body>
+
+</html>
