@@ -8,8 +8,6 @@ body  {
     background-color:  black;
 }
 
-
-
 .today {
     height:90%;
     width:100%;   
@@ -19,6 +17,69 @@ body  {
     align-items:center;
     color:white;
  }
+
+.today .projects {
+    display:flex;
+    justify-content:center;
+    margin: 10px;
+}
+
+.today .projects a {
+    text-decoration:none;
+    color: black;
+}
+
+.today .projects div {
+    margin: 10px;
+}
+
+
+.today .projects .firstproject, .secondproject {
+    height:120px;
+    width:120px;
+    background-color: whitesmoke;
+    box-shadow: 20px -20px 20px rgba(169, 169, 169, 0.4);
+    display : flex;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-size:20px;
+    border-radius:10px;
+    border-color:lightgray;
+    border:solid;
+}
+
+
+.today .projects .firstproject:hover {
+    height:160px;
+    width:160px;
+    box-shadow: 40px -40px 20px lightcyan;
+    cursor: pointer;
+    font-size: 30px;
+    background-image:url("img/ColorChar.png");
+    transition :0.3s;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position:center;
+}
+
+.today .projects .secondproject:hover {
+    height:160px;
+    width:160px;
+    box-shadow: 40px -40px 20px lightcyan;
+    background-color: lightgray;
+    cursor: pointer;
+    font-size: 30px;
+    transition :0.3s;
+}
+
+.today .projects .firstproject a:hover {
+    display: none;
+}
+
 
  .today .circle {
     height: 300px;
