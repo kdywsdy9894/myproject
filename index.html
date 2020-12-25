@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <title>dyk's page</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="Title">
-        <h1>It's Your Time</h1>
-        <div id="Clock" onload="showTime()"></div>
+
+    <div class="today">
+        <div class="circle">
+            <div id="Year" class="year"></div>
+            <div id="HMS" class="hms"></div>
+            <div id="MDD" class="mdd"></div>
+        </div>
     </div>
 
-    <div class="SubTitle">
-        <h2>The world is Yours</h2>
-        <div>Take it over.</div>
-    </div>
-
-    <button id="menu" class="Menu" type="button"></button>
-    
     <script>
         function showTime() {
             var date = new Date();
             var y = date.getFullYear();
-            var mon = (date.getMonth() + 1);
+            var mon = date.getMonth();
             var d = date.getDate();
             var day = date.getDay();
             var h = date.getHours();
@@ -38,6 +35,20 @@
                 }
                 return i;
             }
+
+            var month = new Array(12)
+            month[0] = "Jan";
+            month[1] = "Feb";
+            month[2] = "Mar";
+            month[3] = "Apr";
+            month[4] = "May";
+            month[5] = "Jun";
+            month[6] = "Jul";
+            month[7] = "Aug";
+            month[8] = "Sep";
+            month[9] = "Oct";
+            month[10] = "Nov";
+            month[11] = "Dec";
 
             var weekday = new Array(7)
             weekday[0] = "Sun";
@@ -52,18 +63,19 @@
             m = addzero(m);
             s = addzero(s);
 
-            var time = y + "." + mon + "." + d + " " + weekday[day] + " " + h + ":" + m + ":" + s;
-            document.getElementById("Clock").innerHTML = time;
+            var hms = h + ":" + m + ":" + s;
+            var mdd = month[mon] + " " + d + ", " + weekday[day] + ".";
+            var year = y;
+            document.getElementById("HMS").innerHTML = hms;
+            document.getElementById("MDD").innerHTML = mdd;
+            document.getElementById("Year").innerHTML = year;
 
             setTimeout(showTime, 1000);
         }
 
         showTime();
-
     </script>
-
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fd0f2a62cc5175a"></script>
-
 </body>
 
 </html>
