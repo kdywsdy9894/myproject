@@ -25,6 +25,10 @@ p {
     transform: translate(-50%, -50%);
 }
 
+.time a {
+    float: left;
+}
+
 .time .clock {
     font-size: 60px;
 }
@@ -43,6 +47,7 @@ p {
 
 .time .instaid, .showmusic {
     display: none;
+    text-shadow : none;
 }
 
 .time .instaid:hover {
