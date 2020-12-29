@@ -14,7 +14,7 @@ p {
 
 .time {
     color: white;
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 3.5px 3.5px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
